@@ -11,7 +11,14 @@ namespace AcmeLogger
     {
         public void Log(string message)
         {
-            Debug.WriteLine(message);
+            if (message == null)
+            {
+                Debug.WriteLine("Message was null");
+            }
+            else
+            {
+                Debug.WriteLine(message);
+            }            
         }
     }
 }
