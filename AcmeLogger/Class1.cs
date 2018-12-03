@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,6 +11,19 @@ namespace AcmeLogger
     {
         public void Log(string message)
         {
+            if (1 == 1)
+            {
+                var foo = "bar";
+            }
+
+#if DEBUG
+            var bar = "debug";
+#endif
+
+#if RELEASE
+            var baz = "release";
+#endif
+
             if (message == null)
             {
                 Debug.WriteLine("Message was null");
