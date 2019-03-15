@@ -13,7 +13,7 @@ namespace AcmeLogger
         {
             if (1 == 1)
             {
-                var foo = "bar";
+                var foo = "baz";
             }
 
 #if DEBUG
